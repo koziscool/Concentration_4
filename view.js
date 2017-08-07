@@ -1,4 +1,13 @@
 
-console.log('view.js');
+
+var matcherView = {
+
+	init: function() {},
+
+	updateGameView: function() {},
+
+};
+
+
 
 

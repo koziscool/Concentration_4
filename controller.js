@@ -1,3 +1,11 @@
 
-console.log('controller');
+
+var matcherController = {
+
+	init: function(size) {},
+
+};
+
+
+
 
