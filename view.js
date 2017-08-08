@@ -31,9 +31,26 @@ var matcherView = {
 		}
 	},
 
+	revealCard: function(cardId) {
+		$('#card-' + cardId).addClass('revealed');
+	},
 
-	updateGameView: function() {},
+	hideCards: function(  ) {
+		$('.card').not('.correct').removeClass('revealed');	
+	},
 
+	setCorrect: function( cardId ) {
+		$('#card-' + cardId).off('click');
+		$('#card-' + cardId).addClass('correct');
+	},
+
+
+	updateGameView: function(  ) {
+		$('#game-state-text').text( this.model.gameStateText );	
+		$('#num-guesses').text( this.model.numGuesses );	
+		$('#total-cards').text( this.model.totalCards );	
+		$('#matched-cards').text( this.model.matchedCards );	
+	},
 };
 
 

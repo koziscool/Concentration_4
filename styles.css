@@ -50,9 +50,20 @@
 	font-size: large;
 	backface-visibility: hidden;
 	transition: all 0.5s;
+	transform: translateY(60%) rotateY(180deg);
+}
+
+.revealed {
+	transform: rotate(0deg);
+}
+
+.revealed .name {
 	transform: translateY(60%) rotateY(0deg);
 }
 
-
+.correct {
+	border-color:darkgreen;
+	background-color:lime;
+}
 
 
